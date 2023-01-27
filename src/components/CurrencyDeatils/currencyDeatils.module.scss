@@ -1,0 +1,19 @@
+@import "@/styles/_variables";
+@import "@/styles/_mixins";
+
+.container {
+  height: 295px;
+  padding: 30px 48px 0;
+  background-color: $light_blue;
+
+  @include media($medium) {
+    padding: 63px 77px 0;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 32px;
+    color: $white;
+    text-align: center;
+  }
+}

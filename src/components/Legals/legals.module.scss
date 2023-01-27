@@ -1,0 +1,20 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
+.container {
+  display: none;
+  max-width: 518px;
+  background-color: $lightest_blue;
+  padding: 14px 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+
+  @include media($medium) {
+    display: block;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 36px;
+  }
+}
